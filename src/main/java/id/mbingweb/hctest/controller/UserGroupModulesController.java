@@ -65,7 +65,7 @@ public class UserGroupModulesController {
     }
     
     @GetMapping(value = "username/{username}")
-    ResponseEntity<Response> getOneByUserId(@PathVariable("username") String username) {
+    ResponseEntity<Response> getOneByUsername(@PathVariable("username") String username) {
         
         // informasi nama method
         String nameOfCurrMethod = new Throwable()
