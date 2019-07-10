@@ -14,8 +14,9 @@ import lombok.Setter;
 public class AppUser {
     
     @Id
-    @GeneratedValue(strategy = GenerationType.SEQUENCE) //untuk generate auto-increment
-    private Long id;
+    //@GeneratedValue(strategy = GenerationType.SEQUENCE) //untuk generate auto-increment
+    @Column(name = "user_id")
+    private Long userId;
     
     @Column(name = "username")
     private String username;

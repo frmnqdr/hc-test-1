@@ -12,7 +12,8 @@ import org.springframework.stereotype.Service;
  */
 @Service
 public class AppUserServiceImpl implements AppUserService {
-    @Autowired AppUserRepository appUserRepository;
+    @Autowired
+    AppUserRepository appUserRepository;
     
     @Override
     public List<AppUser> getAll() {
@@ -26,7 +27,7 @@ public class AppUserServiceImpl implements AppUserService {
     
     @Override
     public AppUser update(Long id, AppUser appUser) {
-        appUser.getId();
+        appUser.getUserId();
         return appUserRepository.save(appUser);
     }
     
